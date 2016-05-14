@@ -1,0 +1,217 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  background-color: #3D4549;
+  color:#FBFCF4;
+}
+
+.panel-body {
+    color: #333;
+}
+
+a {
+    color: #00C8E1;
+    text-decoration: none;
+}
+
+small, .small,h1 small,h2 small,h3 small,h4 small,h5 small,h6 small, .help-block {
+    color: #999;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover,
+.pagination > .active > span:hover, .pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #00C8E1;
+    border-color: #00C8E1;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: #00C8E1;
+}
+
+.navbar-seconde-top {
+    padding-top: 15px;
+    top: 55px;
+}
+
+.navbar-seconde-bottom {
+    padding: 10px 0;
+    bottom: 55px;
+}
+
+.navbar-inverse {
+    background-image: linear-gradient(to bottom, #2B3034 0%, #222 100%);
+    background-repeat: repeat-x;
+    background-color: #222;
+    border-bottom: 1px solid #080808;
+    border-top: 4px solid #00C8E1;
+}
+
+.navbar-theme-default {
+    background-image: linear-gradient(to bottom, #00C8E1 0%, #22a7bf 100%);
+    background-repeat: repeat-x;
+    background-color: #222;
+    border-top: 1px solid #2B3034;
+}
+
+.navbar-inverse .navbar-nav > li > a,.navbar-inverse .navbar-brand {
+    color: #FBFCF4;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom, #00C8E1 0%, #22a7bf 100%);
+    background-repeat: repeat-x;
+    border-color: #222;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background-image: linear-gradient(to bottom, #00C8E1 0%, #22a7bf 100%);
+    background-repeat: repeat-x;
+    border-color: #222;
+}
+
+.thumbnail {
+    background-color: #3D4549;
+    border:1px solid #999;
+}
+
+.border .img-rounded {
+    padding: 0 10px 10px 10px;
+}
+
+.border h3 {
+    margin-top: 5px;
+}
+
+.thumbnail-comic {
+    padding: 0 10px 10px 10px;
+}
+
+.border {
+    border:1px solid #999;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-20 {
+    padding: 10px;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.margin-20 {
+    margin: 10px;
+}
+
+.one-line {
+    white-space:nowrap;
+    width: 100%; /* à modifier selon vos besoins */
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.lang-selector {
+    margin: 6px;
+}
+
+/*
+ * icon-lang
+ * --------------------------------------------------
+ */
+.icon-lang{
+    cursor:pointer;
+}
+
+.icon-lang-16-fr:before {
+    content: url('../images/flags/16/fr.png');
+}
+
+.icon-lang-32-fr:before {
+    content: url('../images/flags/32/fr.png');
+}
+
+.icon-lang-16-de:before {
+    content: url('../images/flags/16/de.png');
+}
+
+.icon-lang-32-de:before {
+    content: url('../images/flags/32/de.png');
+}
+
+.icon-lang-16-en:before {
+    content: url('../images/flags/16/uk.png');
+}
+
+.icon-lang-32-en:before {
+    content: url('../images/flags/32/uk.png');
+}
+
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+#imageThumb{
+    width: 240px;
+    height: 210px;
+    border-color: white;
+    border-style: solid;
+}
+

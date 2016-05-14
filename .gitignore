@@ -73,6 +73,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
+.project
 
 # External tool builders
 .externalToolBuilders/
@@ -101,3 +102,8 @@ composer.lock
 .env.*.php
 .env.php
 /nbproject/
+
+# Custom
+/public/uploads/*
+!/public/uploads/0
+_ide_helper.php

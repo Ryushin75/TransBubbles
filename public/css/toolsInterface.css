@@ -1,0 +1,70 @@
+body {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+#paint {
+	width:100%;
+}
+
+#paint .origin-td{
+	text-align: right;
+	padding-right:5px;
+	vertical-align: top;
+}
+
+#paint #delivered{
+	vertical-align: top;
+}
+
+.icon-update:before {
+	content: url('../images/icons/16/mouse12.png');
+}
+.icon-brush:before {
+	content: url('../images/icons/16/brush7.png');
+}
+.icon-text:before {
+	content: url('../images/icons/16/typografic.png');
+}
+.icon-rect:before {
+	content: url('../images/icons/16/rectangular2.png');
+}
+.icon-circle:before {
+	content: url('../images/icons/16/circle2.png');
+}
+.icon-del:before {
+	content: url('../images/icons/16/delete97.png');
+}
+.icon-viewAll:before {
+	content: url('../images/icons/16/visibility1.png');
+}
+.icon-selectAll:before {
+	content: url('../images/icons/16/selector.png');
+}
+.icon-undo:before {
+	content: url('../images/icons/16/undo12.png');
+}
+.icon-redo:before {
+	content: url('../images/icons/16/redo12.png');
+}
+.icon-magnifier:before {
+	content: url('../images/icons/16/magnifier12.png');
+}
+.icon-little-square:before {
+	content: url('../images/icons/16/little-square.png');
+}
+.icon-medium-square:before {
+	content: url('../images/icons/16/medium-square.png');
+}
+.icon-big-square:before {
+	content: url('../images/icons/16/big-square.png');
+}
+.icon-zoomm:before {
+	content: url('../images/icons/16/zoomm.png');
+}
+.icon-zoom:before {
+	content: url('../images/icons/16/zoom.png');
+}
+.icon-zoomp:before {
+	content: url('../images/icons/16/zoomp.png');
+}

@@ -2,15 +2,30 @@
 
 class TestCase extends Illuminate\Foundation\Testing\TestCase {
 
-	/**
-	 * Creates the application.
-	 *
-	 * @return \Symfony\Component\HttpKernel\HttpKernelInterface
-	 */
-	public function createApplication() {
+    /**
+     * Default preparation for each test
+     */
+    public function setUp() {
+        parent::setUp();
+        Artisan::call('migrate');
+        Session::start();
+        Mail::pretend(true);
+        Route::enableFilters();
+    }
+    
+    public function tearDown() {
+        parent::tearDown();
+        Artisan::call('migrate:reset');
+    }
 
-		return require __DIR__.'/../../bootstrap/start.php';
-
-	}
-
+    /**
+     * Creates the application.
+     *
+     * @return Symfony\Component\HttpKernel\HttpKernelInterface
+     */
+    public function createApplication() {
+        $unitTesting = true;
+        $testEnvironment = 'testing';
+        return require __DIR__ . '/../../bootstrap/start.php';
+    }
 }

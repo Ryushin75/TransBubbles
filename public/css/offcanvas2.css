@@ -1,0 +1,207 @@
+html,body {
+	overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+.navbar-seconde-top {
+	padding: 0 20px;
+	top: 70px;
+        margin:0;
+}
+
+.navbar-seconde-bottom {
+	padding: 10px 0;
+}
+
+.border {
+	border: 1px solid #999;
+}
+
+.padding-5 {
+	padding: 5px;
+}
+
+.padding-10 {
+	padding: 10px;
+}
+
+.padding-20 {
+	padding: 10px;
+}
+
+.margin-5 {
+	margin: 5px;
+}
+
+.margin-10 {
+	margin: 10px;
+}
+
+.margin-20 {
+	margin: 10px;
+}
+
+.thumbnail {
+	background-color: #303030;
+    border: 1px solid #464545;
+    padding-bottom: 30px;
+}
+
+.thumbnail-comic {
+	padding: 0 10px 10px 10px;
+}
+
+.border .img-rounded {
+	padding: 0 10px 10px 10px;
+}
+
+.border {
+	border: 1px solid #999;
+}
+
+.border h3 {
+	margin-top: 5px;
+}
+
+.one-line {
+	white-space: nowrap;
+	width: 100%; /* à modifier selon vos besoins */
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+.lang-selector {
+	margin: 6px;
+}
+
+.canvas-container {
+    margin: 0 auto;
+}
+
+#right .btn-default:hover, #right .btn-default:focus, #right .btn-default.focus, #right .btn-default:active, #right .btn-default.active, 
+#right .open > .dropdown-toggle.btn-default {
+    background-color: #0ce3ac;
+    border-color: #272727;
+    color: #ffffff;
+}
+
+/*
+ * icon-lang
+ * --------------------------------------------------
+ */
+#icon-lang {
+	cursor: pointer;
+	padding-bottom : 0px;
+	padding-left : 3px;
+	padding-right : 3px;
+}
+
+.icon-lang-16-fr:before {
+	content: url('../images/flags/16/fr.png');
+}
+
+.icon-lang-32-fr:before {
+	content: url('../images/flags/32/fr.png');
+}
+
+.icon-lang-16-de:before {
+	content: url('../images/flags/16/de.png');
+}
+
+.icon-lang-32-de:before {
+	content: url('../images/flags/32/de.png');
+}
+
+.icon-lang-16-en:before {
+	content: url('../images/flags/16/uk.png');
+}
+
+.icon-lang-32-en:before {
+	content: url('../images/flags/32/uk.png');
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+	.row-offcanvas {
+		position: relative;
+		-webkit-transition: all .25s ease-out;
+		-o-transition: all .25s ease-out;
+		transition: all .25s ease-out;
+	}
+	.row-offcanvas-right {
+		right: 0;
+	}
+	.row-offcanvas-left {
+		left: 0;
+	}
+	.row-offcanvas-right
+  .sidebar-offcanvas {
+		right: -50%; /* 6 columns */
+	}
+	.row-offcanvas-left
+  .sidebar-offcanvas {
+		left: -50%; /* 6 columns */
+	}
+	.row-offcanvas-right.active {
+		right: 50%; /* 6 columns */
+	}
+	.row-offcanvas-left.active {
+		left: 50%; /* 6 columns */
+	}
+	.sidebar-offcanvas {
+		position: absolute;
+		top: 0;
+		width: 50%; /* 6 columns */
+	}
+}
+
+#imageThumb {
+	width: 240px;
+	height: 210px;
+	border-color: white;
+	border-style: solid;
+}
+
+/*
+ * Table
+ */
+ .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+ color: white;
+}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+   background-color: #3d3d3d;
+}
+table.dataTable tbody tr {
+    background-color: inherit;
+}
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+    background-color: #3d3d3d;
+}
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+    background-color: inherit;
+}
+
+table.dataTable.hover tbody tr:hover, table.dataTable.hover tbody tr.odd:hover, table.dataTable.hover tbody tr.even:hover, table.dataTable.display tbody tr:hover, table.dataTable.display tbody tr.odd:hover, table.dataTable.display tbody tr.even:hover {
+    background-color: #464545;
+}
+table.dataTable.hover tbody tr.selected:hover, table.dataTable.hover tbody tr.odd.selected:hover, table.dataTable.hover tbody tr.even.selected:hover, table.dataTable.display tbody tr.selected:hover, table.dataTable.display tbody tr.odd.selected:hover, table.dataTable.display tbody tr.even.selected:hover {
+    background-color: #464545;
+}
+#tableData_length > label > select {
+	color: black;
+}
+table.dataTable.hover tbody tr:hover, table.dataTable.hover tbody tr.odd:hover, table.dataTable.hover tbody tr.even:hover, table.dataTable.display tbody tr:hover, table.dataTable.display tbody tr.odd:hover, table.dataTable.display tbody tr.even:hover {
+    background-color: #464545;
+}
+table.dataTable.hover tbody tr.selected:hover, table.dataTable.hover tbody tr.odd.selected:hover, table.dataTable.hover tbody tr.even.selected:hover, table.dataTable.display tbody tr.selected:hover, table.dataTable.display tbody tr.odd.selected:hover, table.dataTable.display tbody tr.even.selected:hover {
+    background-color: #464545;
+}
+table.dataTable.display tbody tr:hover > .sorting_1, table.dataTable.display tbody tr.odd:hover > .sorting_1, table.dataTable.display tbody tr.even:hover > .sorting_1, table.dataTable.order-column.hover tbody tr:hover > .sorting_1, table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_1, table.dataTable.order-column.hover tbody tr.even:hover > .sorting_1 {
+    background-color: #464545;
+}
+table.dataTable.display tbody tr:hover > .sorting_2, table.dataTable.display tbody tr.odd:hover > .sorting_2, table.dataTable.display tbody tr.even:hover > .sorting_2, table.dataTable.order-column.hover tbody tr:hover > .sorting_2, table.dataTable.order-column.hover tbody tr.odd:hover > .sorting_2, table.dataTable.order-column.hover tbody tr.even:hover > .sorting_2 {
+    background-color: #464545;
+}
